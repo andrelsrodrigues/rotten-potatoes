@@ -38,8 +38,8 @@ jobs:
         with:
           context: ./src
           file: .src/Dockerfile
-          labels: |
+          push: true
+          tags: |
             andrelsrodrigues/rotten-potatoes:latest
             andrelsrodrigues/rotten-potatoes:${{github.run_number}}
-          push: true
  
